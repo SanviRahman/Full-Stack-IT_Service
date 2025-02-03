@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
 
 <head class="header">
     <meta charset="utf-8">
-    <title>Responsive Navbar with Search Box | CodingNepal</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -296,8 +295,32 @@
         /* 1st section */
         .section {
             background-image: url('https://th.bing.com/th/id/R.cf2922b9c74a11dd76146e2171397e59?rik=DraFhPTppE48LQ&riu=http%3a%2f%2fwonderfulengineering.com%2fwp-content%2fuploads%2f2016%2f01%2fblack-wallpaper-3.jpg&ehk=By%2fOyu69UBtmC8dDgg6mIgYH0qZeo7Fhtj%2bmQnue9pM%3d&risl=&pid=ImgRaw&r=0');
-            height: 350px;
+            height: 450px;
             display: flex;
+        }
+
+        button {
+            background-color: red;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .btn1 {
+            background-color: blue;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
         }
 
         .h1 {
@@ -311,44 +334,123 @@
             margin-bottom: 0px;
             color: black;
         }
+
         .content2 {
             margin-left: 1400px;
             margin-top: 60px;
         }
-        .section2{
+
+        .section2 {
             display: flex;
             margin-top: 100px;
             gap: 250px;
+
         }
-        .content3{
-            margin-left: 200px;
-            margin-top: 80px;
+
+        .content3 {
+            margin-top: 60px;
+            margin-left: 100px;
+            margin-right: 80px;
+            gap: 80px;
+            height: 200px;
         }
-        .content4{
+
+        .content4 {
             height: 600px;
             width: 400px;
-            margin-left: 300px;
-            margin-top: 110px;
+            margin-top: 60px;
+            margin-right: 400px;
+            gap: 20px;
         }
-        .section3{
+
+        .section3 {
             display: flex;
             background-color: rgb(240, 175, 175);
-            height: 300px;
+            height: 400px;
             width: auto;
-            gap: 500px;
-            padding: 80px;
+            gap: 40px;
+            padding: 60px;
         }
-        .section4{
+
+        .section4 {
             display: flex;
+            background-color:whitesmoke;
             margin-top: 60px;
-            margin-left: 60px;
-            gap: 30px;
+            gap: 50px;
+            height: 400px;
+            width: auto;
+            gap: 40px;
+            padding: 60px;
         }
-        .section5{
+
+        .section5 {
             display: flex;
             margin-top: 60px;
             margin-left: 200px;
             gap: 50px;
+        }
+
+        .section6 {
+            display: flex;
+            margin-top: 40px;
+            margin-left: 300px;
+            gap: 80px;
+        }
+
+        .section7 {
+            background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3YxMDE2LWItMDhkXzEta3NoNnJubDMuanBn.jpg');
+            display: flex;
+            margin-top: 60px;
+            margin-left: 100px;
+            margin-right: 80px;
+            gap: 80px;
+            height: 500px;
+        }
+
+        .section8 {
+            background-color: antiquewhite;
+            display: flex;
+            margin-top: 40px;
+            margin-left: 100px;
+            margin-right: 80px;
+            gap: 80px;
+            height: 400px;
+        }
+
+        .section9 {
+            background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/04/Beautiful-Red-Background.jpg');
+            height: 500px;
+            display: flex;
+            margin-top: 60px;
+            margin-left: 100px;
+            margin-right: 80px;
+            gap: 80px;
+        }
+
+        /* footer section */
+        footer {
+            background-color: #14181f;
+            height: 500px;
+            margin-top: 60px;
+            margin-left: 100px;
+            margin-right: 80px;
+            gap: 80px;
+        }
+
+        .footersection2 {
+            display: flex;
+            margin-top: 60px;
+            margin-left: 400px;
+            margin-right: 80px;
+            gap: 180px;
+        }
+
+        .footersection3 {
+            display: flex;
+            margin-top: 60px;
+            margin-left: 400px;
+            margin-right: 80px;
+            gap: 40px;
         }
     </style>
 
@@ -356,19 +458,20 @@
 
 
 
-        <!-- nav -->
+    <!-- nav -->
     <nav>
         <div class="menu-icon">
             <span class="fas fa-bars"></span>
         </div>
         <div class="logo">
-            LML SERVICE
+            LML <br>
+            SERVICE
         </div>
         <div class="nav-items">
-            <li><a href="#">Home</a></li>
+            <li><a href="http://127.0.0.1:8000/landing/">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="http://127.0.0.1:8000/contact/">Contact</a></li>
             <li><a href="#">Feedback</a></li>
         </div>
         <div class="search-icon">
@@ -377,10 +480,10 @@
         <div class="cancel-icon">
             <span class="fas fa-times"></span>
         </div>
-        <form action="#">
+        <!-- <form action="#">
             <input type="search" class="search-data" placeholder="Search" required>
             <button type="submit" class="fas fa-search"></button>
-        </form>
+        </form> -->
     </nav>
 </head>
 
@@ -390,68 +493,80 @@
 
 
 <!-- body -->
+
 <body>
-        <!-- section 1 -->
-    <section class="section">
+    <!-- section 1 -->
+    <section class="section" style="overflow: hidden;">
         <div class="content">
-            <h2 class="h1">Empowering Your Business with Cutting-Edge <span style="color:#ff3d00">IT Solution</span>
+            <h2 class="h1" style="padding: 8px;">Empowering Your Business with Cutting-Edge <span style="color:#ff3d00">IT Solution</span>
                 <br>
-                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas aperiam iure incidunt aliquam
+                <small style="padding: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas aperiam iure incidunt aliquam
                     neque veritatis.</small>
             </h2>
         </div>
         <div class="content2">
-            <img src="https://media.licdn.com/dms/image/v2/D5635AQFvn3PEX0X_JQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1731213759204?e=1739012400&v=beta&t=bBkmsaIHNScBaNBMSuMe8BZWpaNZc2vRd6TL1hntxYI"
-                alt="">
+            <img src="https://outsons.com/wp-content/uploads/2019/09/mohamad-khosravi-ikjvPfC3pbI-unsplash-1-scaled.jpg"
+                alt=""  height="350px" width="250px">
         </div>
     </section>
-                    <!-- section 2 -->
-    <section class="section2">
+    <!-- section 2 -->
+    <section class="section2" style="overflow: hidden;">
         <div class="content3">
-            <h4 style="color:#e63600; padding: 10px">Our Story</h4>
+            <h2 style="color:#e63600; padding: 10px">Our Story</h2>
             <h1 style="padding: 5px; color: #e63600;">Transforming Business Through Technology</h1>
-            <p style="padding: 10px; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Ullam consectetur facilis nostrum optio illum sint, at id,<br>voluptas omnis laudantium eaque in sed recusandae<br>dolores  molestiae inventore sit. Recusandae tempore est ex explicabo<br>dignissimos hic delectus, placeat odit quidem adipisci perferendis <br>mollitia incidunt, molestiae dolorem fuga fugiat, ipsa beatae facere <br> optio. Voluptatum veniam numquam architecto iste ipsam commodi, sed <br> molestiae aspernatur totam dolorum. Enim temporibus esse aut, <br> nihil ea est eius consequatur maiores, beatae alias pariatur at </p>
-            <button type="submit" style="background-color: #e63600; color: white; border-radius: 5px;">Contact Us</button>
+            <p style="padding: 10px; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.Ullam consectetur facilis nostrum optio illum sint, at id,voluptas omnis laudantium eaque
+                in sed recusandae dolores molestiae inventore sit. Recusandae tempore est ex explicabodignissimos
+                hic delectus, placeat odit quidem adipisci perferendis mollitia incidunt, molestiae dolorem fuga
+                fugiat, ipsa beatae facere optio. Voluptatum veniam numquam architecto iste ipsam commodi, sed
+                molestiae aspernatur totam dolorum. Enim temporibus esse aut,nihil ea est eius consequatur
+                maiores, beatae alias pariatur at </p>
+            <!-- <button type="submit" style="padding: 10px; background-color: #e63600;color: white; ">Contact Us</button> -->
+             <a href="#">
+                <button type="submit" class="btn">Contact Us</button>
+             </a>
         </div>
         <div class="content4">
-            <img src="https://media.licdn.com/dms/image/v2/D5635AQFvn3PEX0X_JQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1731213759204?e=1739012400&v=beta&t=bBkmsaIHNScBaNBMSuMe8BZWpaNZc2vRd6TL1hntxYI" alt="">
+            <img src="https://outsons.com/wp-content/uploads/2019/09/mohamad-khosravi-ikjvPfC3pbI-unsplash-1-scaled.jpg"
+                alt="" height="400px" width="300px">
         </div>
     </section>
 
 
-            <!-- section 3 -->
-    <section class="section3">
-        <div>
-            <h1 style="color: #e63600;">99+</h1>
+    <!-- section 3 -->
+    <section class="section3" style="overflow: hidden;">
+        <div style="margin-top: 35px;">
+            <h1 style="color: #e63600; font-size:60px;">99+</h1>
             <p style="padding: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam!</p>
         </div>
-        <div>
-            <h1 style="color: #e63600;">50</h1>
+        <div style="margin-top: 35px;">
+            <h1 style="color: #e63600; font-size: 60px;">50</h1>
             <p style="padding: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam!</p>
         </div>
-        <div>
-            <h1 style="color: #e63600;">48+</h1>
+        <div style="margin-top: 35px;">
+            <h1 style="color: #e63600; font-size: 60px;">48+</h1>
             <p style="padding: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam!</p>
         </div>
-        <div>
-            <h1 style="color: #e63600;">32</h1>
+        <div style="margin-top: 35px;">
+            <h1 style="color: #e63600; font-size: 60px;">32</h1>
             <p style="padding: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quibusdam!</p>
         </div>
     </section>
 
 
 
-            <!-- section 4 -->
-    <section class="section4">
+    <!-- section 4 -->
+    <section class="section4" style="overflow: hidden;">
         <div style="margin-left: 50px;">
-            <img src="https://th.bing.com/th/id/OIP.CCyhuRoDUuwUe2QaV9IVEwHaE4?rs=1&pid=ImgDetMain" alt="" style="margin-left: 150px;">
+            <img src="https://th.bing.com/th/id/OIP.CCyhuRoDUuwUe2QaV9IVEwHaE4?rs=1&pid=ImgDetMain" alt=""
+                style="margin-left: 150px;">
         </div>
-        <div style="margin-left: 20px;">
+        <div style="margin-left: 50px; margin-top: 50px;">
             <h1 style="padding: 20px;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, qui!
             </h1>
             <p style="padding: 20px;">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim porro tempora, modi neque in <br> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim porro tempora, modi neque in <br>
                 qui optio perferendis aperiam,doloremque facilis omnis totam, non vitae iste cupiditate a. <br>
                 Itaque voluptate odit nisi veritatis aperiam dolorum perspiciatis incidunt voluptatum cupiditate <br>
                 odio, animi autem quae molestiae atque necessitatibus a distinctio temporibus, quos adipisci. <br>
@@ -461,43 +576,121 @@
 
 
 
-            <!-- section 5 -->
-    <section class="section5">
+    <!-- section 5 -->
+    <section class="section5" style="overflow: hidden;">
         <div>
             <h1 style="padding: 15px;">Warum meine IT-Beratung die
                 richtige Wahlist.
             </h1>
             <p style="padding: 15px;">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Nobis, quo. Eum temporibus veritatis ducimus voluptates dicta <br> delectus dolor nostrum culpa?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Nobis, quo. Eum temporibus veritatis
+                ducimus voluptates dicta <br> delectus dolor nostrum culpa?
             </p>
-            <button type="submit" style="padding: 10px; background-color: #e63600;color: white;">Contact Us</button>
+            <!-- <button type="submit" style="padding: 10px; background-color: #e63600;color: white;">Contact Us</button> -->
+            <button type="submit" class="btn">Contact Us</button>
         </div>
 
         <div>
-            <img src="https://th.bing.com/th/id/OIP.CCyhuRoDUuwUe2QaV9IVEwHaE4?rs=1&pid=ImgDetMain" alt="" style="margin-left: 150px;">
+            <img src="https://th.bing.com/th/id/OIP.CCyhuRoDUuwUe2QaV9IVEwHaE4?rs=1&pid=ImgDetMain" alt=""
+                style="margin-left: 150px;">
+        </div>
+    </section>
+
+
+
+    <!-- section 6 -->
+    <h1 style="color: #e63600; text-align: center; margin-top: 80px;"> Our Key Feature</h1>
+    <section class="section6" style="overflow: hidden;">
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.WEKMZBVS3dCZ3PT9NU9UKAHaE3?rs=1&pid=ImgDetMain" alt="">
+            <h1 style="color: red; padding: 8px;">24/7 Support and Maintanance</h1>
+            <p style="padding: 6px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.WEKMZBVS3dCZ3PT9NU9UKAHaE3?rs=1&pid=ImgDetMain" alt="">
+            <h1 style="color: red; padding: 8px;">Innovation Tech Solutions</h1>
+            <p style="padding: 6px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <img src="https://th.bing.com/th/id/OIP.WEKMZBVS3dCZ3PT9NU9UKAHaE3?rs=1&pid=ImgDetMain" alt="">
+            <h1 style="color: red; padding: 8px;">Innovation Focus</h1>
+            <p style="padding: 6px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </section>
+
+
+
+    <!-- section 7 -->
+    <h1 style="text-align: center; margin-top: 100px;">Our Advanced Tech Services</h1>
+    <a href="#">
+        <button type="submit" style="margin-top: 50px; margin-left: 300px;">View All</button>
+    </a>
+    <section class="section7" style="overflow: hidden;">
+        <div style="margin-top: 80px; margin-left: 60px;">
+            <img src="https://th.bing.com/th/id/OIP.zhqFSTzFKeVdnhj-UC79PQHaE8?rs=1&pid=ImgDetMain" alt="">
+        </div>
+        <div style="margin-top: 80px;  margin-left: 60px;">
+            <img src="https://th.bing.com/th/id/OIP.zhqFSTzFKeVdnhj-UC79PQHaE8?rs=1&pid=ImgDetMain" alt="">
+        </div>
+        <div style="margin-top: 80px;  margin-left: 60px;">
+            <img src="https://th.bing.com/th/id/OIP.zhqFSTzFKeVdnhj-UC79PQHaE8?rs=1&pid=ImgDetMain" alt="">
+        </div>
+    </section>
+
+
+
+    <!-- section 8 -->
+    <h1 style="text-align: center; margin-top: 120px;">Our Advanced Tech Services</h1>
+    <p style="padding: 6px; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eaque
+        excepturi animi dolores. Doloribus <br>voluptatum rem laboriosam numquam. Officiis, mollitia molestias.</p>
+    <section class="section8" style="overflow: hidden;">
+        <div style="margin-top: 60px; margin-left: 40px;">
+            <img src="https://i.etsystatic.com/22328543/r/il/bcfbb6/2432547969/il_794xN.2432547969_ohg9.jpg"
+                alt="" style="height: 80px;width: 80px; border-radius:35px; padding: 2px;" > <br>
+            <strong style="padding: 3px;">David</strong>
+            <p style="padding: 3px;">Software Developer</p>
+            <p style="padding: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit animi
+                perferendis excepturi, eveniet expedita cupiditate sunt quisquam similique quod?</p>
+        </div>
+        <div style="margin-top: 60px;">
+            <img src="https://i.etsystatic.com/22328543/r/il/bcfbb6/2432547969/il_794xN.2432547969_ohg9.jpg"
+                alt="" style="height: 80px;width: 80px;border-radius: 35px; padding: 2px;"> <br>
+            <strong style="padding: 3px;">John Deo</strong>
+            <p style="padding: 3px;">UI/UX Desinger</p>
+            <p style="padding: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit animi
+                perferendis excepturi, eveniet expedita cupiditate sunt quisquam similique quod?</p>
+        </div>
+        <div style="margin-top: 60px;">
+            <img src="https://i.etsystatic.com/22328543/r/il/bcfbb6/2432547969/il_794xN.2432547969_ohg9.jpg"
+                alt="" style="height: 80px;width: 80px;border-radius: 35px; padding: 2px;"> <br>
+            <strong style="padding: 3px;">Maichell</strong>
+            <p style="padding: 3px;">Back-End Developer</p>
+            <p style="padding: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit animi
+                perferendis excepturi, eveniet expedita cupiditate sunt quisquam similique quod?</p>
         </div>
     </section>
 
 
 
 
+    <!-- section 9 -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <section class="section9" style="overflow: hidden;">
+        <div>
+            <img src="https://w0.peakpx.com/wallpaper/292/662/HD-wallpaper-three-person-using-laptops.jpg" alt=""
+                height="350px" width="450px" style="margin-left: 300px; margin-top: 50px;">
+        </div>
+        <div style="text-align: center; margin-top: 80px;">
+            <h1 style="color: white; margin-left: 100px;">Unlock the full potantial of Your Business image with <br> our
+                Cutting-Edge Software Solution.Join our <br> community today and gain instant</h1>
+            <input type="text" name="comment" placeholder="comment here"
+                style="width: 40%; height: 13%;text-align: center; margin-left: 50px; margin-top: 20px;">
+            <a href="#">
+                <button class="btn1" type="submit">Submit</button>
+            </a>
+           
+        </div>
+    </section>
 
     <script>
         const menuBtn = document.querySelector(".menu-icon span");
@@ -525,6 +718,76 @@
             cancelBtn.classList.add("show");
         }
     </script>
-</body>
 
+    <!-- footer -->
+    <footer class="footer">
+
+
+        <!-- footersection1 -->
+        <section class="footersection1">
+            <div style="margin-top: 100px; margin-left: 100px;">
+                <h1 style="color: red; padding: 12px;">LML SERVICE</h1>
+                <h1 style="color: white; padding: 8px;">Let's work with us</h1>
+                <a href="#" style="padding: 10px;">
+                    <button type="submit" style="margin-bottom: 20px;">Book a Call</button>
+                </a>
+            </div>
+            <hr>
+
+        </section>
+
+
+        <!-- footersection2 -->
+        <section class="footersection2">
+            <div>
+                <h1 style="color: white; padding: 10px;">News Letter</h1>
+                <p style="padding: 5px; color: white;">Lorem ipsum dolor sit amet consectetur.</p>
+                <input type="text" name="email" placeholder="Send Your Email Address"
+                    style="height: 50px; width: 250px;">
+                <br>
+                <a href="#" style="margin-top: 20px;">
+                    <button type="submit" class="btn1">Submit</button>
+                </a>
+               
+
+            </div>
+            <div style="color: white; padding: 10px;  display: block;">
+                <h1>Informatin</h1>
+                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white;text-decoration: none;">About Us</a></p>
+                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white;text-decoration: none;">Why Chooise Us</a></p>
+                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white;text-decoration: none;">Testimonails</a></p>
+
+            </div>
+            <div style="color: white; padding: 10px;  display: block;">
+                <h1>Services</h1>
+                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white; text-decoration: none;">Cyber security</a></p>
+                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white;text-decoration: none;">App Development</a></p>
+                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white;text-decoration: none;">Cloud Migrations</a></p>
+
+            </div>
+            <div>
+                <h1 style="color: white;">Useable Link</h1>
+                <p style="padding: 5px;">
+                    <a href="#">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_de_Facebook.png" alt=""
+                            height="20px" weight="20px">
+                    </a>
+                </p>
+                <p style="padding: 5px;">
+                    <a href="#">
+                        <img src="https://th.bing.com/th/id/R.6f9a03bd4554e5454de1c79f4c91aadf?rik=0c%2fLPEw2uBblNg&pid=ImgRaw&r=0"
+                            alt="" height="20px" weight="20px">
+                    </a>
+                </p>
+                <p style="padding: 5px;">
+                    <a href="#">
+                        <img src="https://th.bing.com/th/id/OIP.Go2CQNhF_49tkKcpEl_sHQHaHZ?rs=1&pid=ImgDetMain" alt=""
+                            height="20px" weight="20px">
+                    </a>
+                </p>
+            </div>
+        </section>
+    </footer>
+
+</body>
 </html>
