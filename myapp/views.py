@@ -22,3 +22,13 @@ def contact(request):
     else:
         form = CustomUserCreationForm()
     return render(request, "contact.html", {"form": form})
+
+def service(request):
+    if request.method == "POST":
+        form = CustomUserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("service")
+    else:
+        form = CustomUserCreationForm()
+    return render(request, "service.html", {"form": form})
