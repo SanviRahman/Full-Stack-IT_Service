@@ -35,7 +35,7 @@ def service(request):
 
 
 def serviceDetails(request):
-    if request=='POST':
+    if request.method =='POST':
         form= CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
@@ -43,4 +43,15 @@ def serviceDetails(request):
     else:
         form= CustomUserCreationForm()
     return render(request, "serviceDetails.html", {"form": form})
+
+def about(request):
+    if request.method == "POST":
+        form=CustomUserCreationForm(request.data)
+        if form.is_valid():
+            form.save()
+            return redirect('about')
+    else:
+        form=CustomUserCreationForm()
+    return render(request, 'about.html',{'form':form})   
+
 
