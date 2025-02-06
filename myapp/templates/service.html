@@ -318,23 +318,23 @@
 
         /* section 2 */
         .section2 {
-            height: 1000px;
+            height: 100%;
             width: 90%;
         }
 
         .div1 {
             display: flex;
-            gap: 250px;
-            margin-top: 100px;
-            margin-left: 400px;
+            gap: 100px;
+            margin-top: 80px;
+            margin-left: 270px;
             height: 350px;
         }
 
         .div2 {
             display: flex;
-            gap: 250px;
-            margin-top: 150px;
-            margin-left: 400px;
+            gap: 100px;
+            margin-top: 80px;
+            margin-left: 270px;
             height: 350px;
         }
 
@@ -359,7 +359,7 @@
         .section4 {
             background-image: url('https://th.bing.com/th/id/OIP.m096lDro6ncKKg4DwPmUUwHaEo?rs=1&pid=ImgDetMain');
             height: 450px;
-            width: 80%;
+            width: 85%;
             margin-left: 200px;
             border-radius: 20px;
         }
@@ -425,9 +425,9 @@
         <div class="nav-items">
             <li><a href="http://127.0.0.1:8000/landing/">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Blogs</a></li>
             <li><a href="http://127.0.0.1:8000/contact/">Contact</a></li>
             <li><a href="http://127.0.0.1:8000/service/">Services</a></li>
+            <li><a href="http://127.0.0.1:8000/serviceDetails/">Services Details</a></li>
         </div>
         <div class="search-icon">
             <span class="fas fa-search"></span>
@@ -458,11 +458,11 @@
 
 
     <!-- section 2 -->
-    <h3 style="color: #ff3d00;text-align: center; margin-top: 40px;">Our Services</h3>
-    <h1 style="color: #ff3d00;text-align: center;">Providing Competed Provational IT Service</h1>
+    <h3 style="color: #ff3d00; margin-top: 40px; margin-left: 280px;">Our Services</h3>
+    <h1 style="color: #ff3d00;margin-left: 270px;padding: 8px;">Providing Competed Provational IT Service</h1>
     <section class="section2">
         <div class="div1">
-            <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;">
+            <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;gap: 20px;flex-wrap: wrap;">
                 <img src="https://th.bing.com/th/id/R.938203be16ee7f4ae02e43119a5de170?rik=xMBp2BV6FEvY3w&pid=ImgRaw&r=0"
                     alt="" height="150px" width="100%"
                     style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
@@ -484,13 +484,21 @@
                     alt="" height="150px" width="100%"
                     style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
 
+                <h1>Artificial Intelligence</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+                <button type="submit" style="margin-top: 25px;">Read More</button>
+            </div>
+            <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;gap: 20px;">
+                <img src="https://th.bing.com/th/id/R.938203be16ee7f4ae02e43119a5de170?rik=xMBp2BV6FEvY3w&pid=ImgRaw&r=0"
+                    alt="" height="150px" width="100%"
+                    style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                 <h1>Artificial Intelligence</h1>
                 <p>Lorem ipsum dolor sit amet</p>
                 <button type="submit" style="margin-top: 25px;">Read More</button>
             </div>
         </div>
         <div class="div2">
-            <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;">
+            <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;gap: 20px;flex-wrap: wrap;">
                 <img src="https://th.bing.com/th/id/R.938203be16ee7f4ae02e43119a5de170?rik=xMBp2BV6FEvY3w&pid=ImgRaw&r=0"
                     alt="" height="150px" width="100%"
                     style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
@@ -504,6 +512,14 @@
                     alt="" height="150px" width="100%"
                     style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
 
+                <h1>Artificial Intelligence</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+                <button type="submit" style="margin-top: 25px;">Read More</button>
+            </div>
+            <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;gap: 20px;">
+                <img src="https://th.bing.com/th/id/R.938203be16ee7f4ae02e43119a5de170?rik=xMBp2BV6FEvY3w&pid=ImgRaw&r=0"
+                    alt="" height="150px" width="100%"
+                    style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                 <h1>Artificial Intelligence</h1>
                 <p>Lorem ipsum dolor sit amet</p>
                 <button type="submit" style="margin-top: 25px;">Read More</button>
@@ -518,8 +534,13 @@
                 <button type="submit" style="margin-top: 25px;">Read More</button>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr style="margin-left: 240px;">
     </section>
-
 
     <!-- section 3 -->
     <section class="section3">
@@ -585,27 +606,33 @@
                     style="height: 50px; width: 250px;">
                 <br>
                 <a href="#" style="margin-top: 20px;">
-                    <button type="submit" class="btn1">Submit</button>
+                    <button type="submit" class="btn1" style="margin-top: 10px;">Submit</button>
                 </a>
             </div>
 
             <div style="color: white; padding: 10px;  display: block;">
                 <h1>Informatin</h1>
-                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white;text-decoration: none; font-weight: bold;">About
+                <p style="padding: 5px;"><a href="#"
+                        style="padding: 10px;color: white;text-decoration: none; font-weight: bold;">About
                         Us</a></p>
-                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white;text-decoration: none; font-weight: bold;">Why
+                <p style="padding: 5px;"><a href="#"
+                        style="padding: 10px;color: white;text-decoration: none; font-weight: bold;">Why
                         Chooise Us</a></p>
                 <p style="padding: 5px;"><a href="#"
-                        style="padding: 10px;color: white;text-decoration: none; font-weight: bold;">Testimonails</a></p>
+                        style="padding: 10px;color: white;text-decoration: none; font-weight: bold;">Testimonails</a>
+                </p>
 
             </div>
             <div style="color: white; padding: 10px;  display: block;">
                 <h1>Services</h1>
-                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white; text-decoration: none; font-weight: bold;">Cyber
+                <p style="padding: 5px;"><a href="#"
+                        style="padding: 10px;color: white; text-decoration: none; font-weight: bold;">Cyber
                         security</a></p>
-                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white;text-decoration: none; font-weight: bold;">App
+                <p style="padding: 5px;"><a href="#"
+                        style="padding: 10px;color: white;text-decoration: none; font-weight: bold;">App
                         Development</a></p>
-                <p style="padding: 5px;"><a href="#" style="padding: 10px;color: white;text-decoration: none; font-weight: bold;">Cloud
+                <p style="padding: 5px;"><a href="#"
+                        style="padding: 10px;color: white;text-decoration: none; font-weight: bold;">Cloud
                         Migrations</a></p>
 
             </div>
