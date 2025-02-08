@@ -320,6 +320,7 @@
         .section2 {
             height: 980px;
             width: 90%;
+            margin-top: 80px;
         }
 
         .div1 {
@@ -464,14 +465,14 @@
     <h3 style="color: #ff3d00; margin-top: 40px; margin-left: 280px;">Our Services</h3>
     <h1 style="color: #ff3d00;margin-left: 270px;padding: 8px;">Providing Competed Provational IT Service</h1>
     <section class="section2">
-        <div class="div1" style="flex-wrap: wrap;">
+        <div class="div1" style="flex-wrap:wrap;">
             {% for index in form %}
-            <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;gap: 20px;flex-wrap: wrap;">
+            <div style="border: 1px solid rgb(99, 98, 98); padding: 12px; border-radius: 12px;">
                 <img src=" {{ index.image.url }}"
                     alt="" height="150px" width="100%"
                     style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <h1>{{ index.title }}</h1>
-                   <p>{{ index.sub_title }}</p> 
+                    <h1>{{index.title}}</h1>
+                   <p>{{index.sub_title}}</p> 
                 
                     <button style="margin-top: 25px;" >
                         <a href="{% url 'serviceDetails' index.pk %}" style="text-decoration: none; color: white;">Read More</a>
@@ -546,11 +547,6 @@
             </div> -->
         </div>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <hr style="margin-left: 240px;margin-top: 460px;">
     </section>
 
     <!-- section 3 -->

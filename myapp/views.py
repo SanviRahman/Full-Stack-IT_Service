@@ -44,15 +44,15 @@ def serviceDetails(request,pk):
 
 
 
-# def about(request):
-#     if request.method == "POST":
-#         form=(request.data)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('about')
-#     else:
-#         form=CustomModelForm()
-#     return render(request, 'about.html',{'form':form})  
+def about(request):
+    if request.method == "POST":
+        form=(request.data)
+        if form.is_valid():
+            form.save()
+            return redirect('about')
+    else:
+        form=CustomModelForm()
+    return render(request, 'about.html',{'form':form})  
 
 
 
