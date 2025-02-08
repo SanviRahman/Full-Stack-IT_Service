@@ -318,7 +318,7 @@
 
         /* section 2 */
         .section2 {
-            height: 100%;
+            height: 980px;
             width: 90%;
         }
 
@@ -410,6 +410,10 @@
             font-size: 16px;
             font-weight: bold;
         }
+        button:hover{
+            background-color:navy;
+            cursor:pointer;
+        }
     </style>
 
     <!-- nav -->
@@ -426,7 +430,7 @@
             <li><a href="http://127.0.0.1:8000/about/">About</a></li>
             <li><a href="http://127.0.0.1:8000/contact/">Contact</a></li>
             <li><a href="http://127.0.0.1:8000/service/">Services</a></li>
-            <li><a href="http://127.0.0.1:8000/serviceDetails/">Services Details</a></li>
+            <!-- <li><a href="http://127.0.0.1:8000/serviceDetails/">Services Details</a></li> -->
         </div>
         <div class="search-icon">
             <span class="fas fa-search"></span>
@@ -460,25 +464,33 @@
     <h3 style="color: #ff3d00; margin-top: 40px; margin-left: 280px;">Our Services</h3>
     <h1 style="color: #ff3d00;margin-left: 270px;padding: 8px;">Providing Competed Provational IT Service</h1>
     <section class="section2">
-        <div class="div1">
+        <div class="div1" style="flex-wrap: wrap;">
+            {% for index in form %}
             <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;gap: 20px;flex-wrap: wrap;">
-                <img src="https://th.bing.com/th/id/R.938203be16ee7f4ae02e43119a5de170?rik=xMBp2BV6FEvY3w&pid=ImgRaw&r=0"
+                <img src=" {{ index.image.url }}"
                     alt="" height="150px" width="100%"
                     style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                <h1>Artificial Intelligence</h1>
-                <p>Lorem ipsum dolor sit amet</p>
-                <button type="submit" style="margin-top: 25px;">Read More</button>
+                    <h1>{{ index.title }}</h1>
+                   <p>{{ index.sub_title }}</p> 
+                
+                    <button style="margin-top: 25px;" >
+                        <a href="{% url 'serviceDetails' index.pk %}" style="text-decoration: none; color: white;">Read More</a>
+                    </button>
+                </a>
             </div>
-            <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;">
+            {% endfor %}
+            <!-- <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;">
                 <img src="https://th.bing.com/th/id/R.938203be16ee7f4ae02e43119a5de170?rik=xMBp2BV6FEvY3w&pid=ImgRaw&r=0"
                     alt="" height="150px" width="100%"
                     style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
 
                 <h1>Artificial Intelligence</h1>
                 <p>Lorem ipsum dolor sit amet</p>
-                <button type="submit" style="margin-top: 25px;">Read More</button>
-            </div>
-            <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;">
+                <a href="http://127.0.0.1:8000/serviceDetails/">
+                    <button type="submit" style="margin-top: 25px;">Read More</button>
+                </a>
+            </div> -->
+            <!-- <div style="border: 1px solid rgb(99, 98, 98); padding: 25px;">
                 <img src="https://th.bing.com/th/id/R.938203be16ee7f4ae02e43119a5de170?rik=xMBp2BV6FEvY3w&pid=ImgRaw&r=0"
                     alt="" height="150px" width="100%"
                     style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
@@ -531,14 +543,14 @@
                 <h1>Artificial Intelligence</h1>
                 <p>Lorem ipsum dolor sit amet</p>
                 <button type="submit" style="margin-top: 25px;">Read More</button>
-            </div>
+            </div> -->
         </div>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <hr style="margin-left: 240px;">
+        <hr style="margin-left: 240px;margin-top: 460px;">
     </section>
 
     <!-- section 3 -->
