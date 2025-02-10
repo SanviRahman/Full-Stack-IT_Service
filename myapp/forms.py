@@ -2,6 +2,7 @@ from django.forms import ModelForm
 from .models import Services,SliderOne,SliderTwo,Contact
 
 
+# Admin panel theke sob handle korle form lagbe na
 class CustomModelForm(ModelForm):
     class Meta:
         model = Services
@@ -29,6 +30,11 @@ class SliderTwoModelForm(ModelForm):
                   'sub_title',
                   'author',
                   )
+# Admin panel theke sob handle korle form lagbe na
+                    # END       
+
+
+
 class ContactModelForm(ModelForm):
     class Meta:
         model = Contact

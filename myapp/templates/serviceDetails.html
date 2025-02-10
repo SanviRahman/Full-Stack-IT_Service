@@ -317,7 +317,8 @@
         .div2 {
             display: flex;
         }
-        .div2div1{
+
+        .div2div1 {
             width: 63%;
         }
 
@@ -361,7 +362,7 @@
         footer {
             background-color: #14181f;
             height: 500px;
-            width: 95%;
+            width: 100%;
             margin-top: 60px;
             margin-left: 100px;
             margin-right: 80px;
@@ -396,6 +397,11 @@
             font-size: 16px;
             font-weight: bold;
         }
+
+        button:hover {
+            background-color: navy;
+            cursor: pointer;
+        }
     </style>
 
 
@@ -413,6 +419,7 @@
             <li><a href="http://127.0.0.1:8000/about/">About</a></li>
             <li><a href="http://127.0.0.1:8000/contact/">Contact</a></li>
             <li><a href="http://127.0.0.1:8000/service/">Services</a></li>
+            <li><a href="http://127.0.0.1:8000/moreabout/">Details Us</a></li>
             <!-- <li><a href="http://127.0.0.1:8000/serviceDetails/">Services Details</a></li> -->
         </div>
         <div class="search-icon">
@@ -445,15 +452,15 @@
     <!-- section 2 -->
     <section class="section2">
         <div class="div2">
-           
+
             <div class="div2div1">
                 <h1 style="color: #ff3d00;text-align:center;padding: 10px;">Cloud Solutions</h1>
                 <p style="text-align: justify;padding: 10px; font-weight: 450;">A cloud solution is a technology
                     framework that enables the delivery of computing services—such as servers, storage, databases,
                     networking, software, and analytics—over the internet, commonly referred to as "the cloud."</p>
-               
-                <img src="{{ form.image.url }}"
-                    alt="" height="570px" width="98%" style="padding: 10px; border-radius: 20px;">
+
+                <img src="{{ form.image.url }}" alt="" height="570px" width="98%"
+                    style="padding: 10px; border-radius: 20px;">
                 <!-- <img src="{{ index.image.url }}"
                     alt="" height="570px" width="98%" style="padding: 10px; border-radius: 20px;"> -->
             </div>
