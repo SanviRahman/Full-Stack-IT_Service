@@ -315,6 +315,10 @@
             font-size: 16px;
             font-weight: bold;
         }
+        button:hover{
+            background-color:navy;
+            cursor:pointer;
+        }
 
         .btn1 {
             background-color: blue;
@@ -326,6 +330,10 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
+        }
+        .btn1:hover{
+            background-color:yellowgreen;
+            cursor:pointer;
         }
 
         .h1 {
@@ -582,7 +590,7 @@
                 molestiae aspernatur totam dolorum. Enim temporibus esse aut,nihil ea est eius consequatur
                 maiores, beatae alias pariatur at </p>
             <!-- <button type="submit" style="padding: 10px; background-color: #e63600;color: white; ">Contact Us</button> -->
-            <a href="#">
+            <a href="https://wa.me/qr/ZWGBYD24IRSVI1">
                 <button type="submit" class="btn">Contact Us</button>
             </a>
         </div>
@@ -647,7 +655,9 @@
                 ducimus voluptates dicta <br> delectus dolor nostrum culpa?
             </p>
             <!-- <button type="submit" style="padding: 10px; background-color: #e63600;color: white;">Contact Us</button> -->
-            <button type="submit" class="btn">Contact Us</button>
+            <button type="submit" class="btn">
+                <a href="https://wa.me/qr/ZWGBYD24IRSVI1" style="text-decoration: none; color: white;">Contact Us</a>
+            </button>
         </div>
 
         <div>
@@ -684,12 +694,16 @@
     <h1 style="color: #e63600; text-align: center; margin-top: 110px;"> Our Key Feature</h1>
     <section class="section6" style="overflow: hidden; position: relative; margin-top: 70px;">
         <div class="slider">
+            {% for index in form %}
             <div class="slide">
-                <img src="https://th.bing.com/th/id/OIP.WEKMZBVS3dCZ3PT9NU9UKAHaE3?rs=1&pid=ImgDetMain" alt="">
-                <h1 style="color: red; padding: 8px;">24/7 Support and Maintanance</h1>
-                <p style="padding: 6px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <img src="{{ index.image.url }}" alt="">
+                <h1 style="color: red; padding: 8px;">{{ index.title }}</h1>
+                <p style="padding: 6px;">{{ index.sub_title }}</p>
+                <!-- <h1 style="color: red; padding: 8px;">24/7 Support and Maintanance</h1>
+                <p style="padding: 6px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
             </div>
-            <div class="slide">
+            {% endfor %}
+            <!-- <div class="slide">
                 <img src="https://th.bing.com/th/id/OIP.WEKMZBVS3dCZ3PT9NU9UKAHaE3?rs=1&pid=ImgDetMain" alt="">
                 <h1 style="color: red; padding: 8px;">Innovation Tech Solutions</h1>
                 <p style="padding: 6px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -713,7 +727,7 @@
                 <img src="https://th.bing.com/th/id/OIP.WEKMZBVS3dCZ3PT9NU9UKAHaE3?rs=1&pid=ImgDetMain" alt="">
                 <h1 style="color: red; padding: 8px;">Innovation Focus</h1>
                 <p style="padding: 6px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
+            </div> -->
         </div>
         <!-- Slider Navigation Buttons -->
         <button class="prev"
@@ -726,7 +740,7 @@
 
     <!-- section 7 -->
     <h1 style="text-align: center; margin-top: 100px;">Our Advanced Tech Services</h1>
-    <a href="#">
+    <a href="https://www.bing.com/images/search?q=laptop+fucasing+image&form=HDRSC3&first=1">
         <button type="submit" style="margin-top: 50px; margin-left: 300px;">View All</button>
     </a>
     <section class="section7" style="overflow: hidden;">
@@ -749,15 +763,16 @@
         excepturi animi dolores. Doloribus <br>voluptatum rem laboriosam numquam. Officiis, mollitia molestias.</p>
     <section class="section8" style="overflow: hidden;">
         <div class="slider">
-            <div  class="slide" style="margin-top: 60px; margin-left: 40px; padding: 20ppx;">
-                <img src="https://i.etsystatic.com/22328543/r/il/bcfbb6/2432547969/il_794xN.2432547969_ohg9.jpg" alt=""
+            {% for index in forms %}
+            <div  class="slide" style="margin-top: 60px; margin-left: 10px; padding: 20ppx;">
+                <img src="{{ index.image.url }}" alt=""
                     style="height: 80px;width: 80px; border-radius:35px; padding: 2px;"> <br>
-                <strong style="padding: 3px;">David</strong>
-                <p style="padding: 3px;">Software Developer</p>
-                <p style="padding: 28px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br> Voluptatibus impedit animi
-                    perferendis excepturil</p>
+                <strong style="padding: 3px;">{{ index.name }}</strong>
+                <p style="padding: 3px;">{{ index.title }}</p>
+                <p style="padding: 28px;">{{ index.sub_title }}</p>
             </div>
-            <div  class="slide" style="margin-top: 60px; padding: 20ppx;">
+            {%  endfor %}
+            <!-- <div  class="slide" style="margin-top: 60px; padding: 20ppx;">
                 <img src="https://i.etsystatic.com/22328543/r/il/bcfbb6/2432547969/il_794xN.2432547969_ohg9.jpg" alt=""
                     style="height: 80px;width: 80px;border-radius: 35px; padding: 2px;"> <br>
                 <strong style="padding: 3px;">John Deo</strong>
@@ -796,7 +811,7 @@
                 <p style="padding: 3px;">Back-End Developer</p>
                 <p style="padding: 28px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatibus impedit animi
                     perferendis excepturil</p>
-            </div>
+            </div> -->
         </div>
         <!-- Slider Navigation Buttons -->
         <button class="prev"
@@ -890,7 +905,7 @@
             <div style="margin-top: 100px; margin-left: 100px;">
                 <h1 style="color: red; padding: 12px;">LML SERVICE</h1>
                 <h1 style="color: white; padding: 8px;">Let's work with us</h1>
-                <a href="#" style="padding: 10px;">
+                <a href="https://wa.me/qr/ZWGBYD24IRSVI1" style="padding: 10px;">
                     <button type="submit" style="margin-bottom: 20px;">Book a Call</button>
                 </a>
             </div>

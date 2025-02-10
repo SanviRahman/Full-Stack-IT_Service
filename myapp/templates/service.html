@@ -351,7 +351,7 @@
             display: flex;
             gap: 50px;
             margin-left: 400px;
-            margin-top: 80px;
+            margin-top: 30px;
 
 
         }
@@ -465,11 +465,11 @@
     <h3 style="color: #ff3d00; margin-top: 40px; margin-left: 280px;">Our Services</h3>
     <h1 style="color: #ff3d00;margin-left: 270px;padding: 8px;">Providing Competed Provational IT Service</h1>
     <section class="section2">
-        <div class="div1" style="flex-wrap:wrap;">
+        <div class="div1" style="flex-wrap:wrap;justify-content: center;align-items: center;">
             {% for index in form %}
             <div style="border: 1px solid rgb(99, 98, 98); padding: 12px; border-radius: 12px;">
                 <img src=" {{ index.image.url }}"
-                    alt="" height="150px" width="100%"
+                    alt="" height="160px" width="100%"
                     style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                     <h1>{{index.title}}</h1>
                    <p>{{index.sub_title}}</p> 
@@ -576,7 +576,9 @@
         <div class="div4">
             <div style="margin-left: 100px;padding: 15px;">
                 <h1 style="color:white; margin-top: 80px;">Interesting in working with me?</h1>
-                <button type="submit" style="margin-top: 180px;">Request a Services</button>
+                <button type="submit" style="margin-top: 180px;">
+                   <a href="https://wa.me/qr/ZWGBYD24IRSVI1" style="text-decoration: none; color: white;">Request a Services </a> 
+                </button>
             </div>
             <div style="margin-left: 350px;margin-top: 50px; padding: 15px;">
                 <img src="https://i.pinimg.com/originals/a9/da/3d/a9da3df52d836a48a091afb99134cfd6.jpg" alt=""
@@ -596,7 +598,7 @@
             <div style="margin-top: 100px; margin-left: 100px;">
                 <h1 style="color: red; padding: 12px;">LML SERVICE</h1>
                 <h1 style="color: white; padding: 8px;">Let's work with us</h1>
-                <a href="#" style="padding: 10px;">
+                <a href="https://wa.me/qr/ZWGBYD24IRSVI1" style="padding: 10px;">
                     <button type="submit" style="margin-bottom: 20px;">Book a Call</button>
                 </a>
             </div>
