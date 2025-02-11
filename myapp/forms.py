@@ -1,9 +1,10 @@
 from django.forms import ModelForm
+from django import forms
 from .models import Services,SliderOne,SliderTwo,Contact
 
 
 # Admin panel theke sob handle korle form lagbe na
-class CustomModelForm(ModelForm):
+class CustomModelForm(forms.ModelForm):
     class Meta:
         model = Services
         fields = ('image',
@@ -12,7 +13,7 @@ class CustomModelForm(ModelForm):
                   'author',
                   )
         
-class SliderOneModelForm(ModelForm):
+class SliderOneModelForm(forms.ModelForm):
     class Meta:
         model = SliderOne
         fields = ('image',
@@ -21,7 +22,7 @@ class SliderOneModelForm(ModelForm):
                   'author',
                   )
 
-class SliderTwoModelForm(ModelForm):
+class SliderTwoModelForm(forms.ModelForm):
     class Meta:
         model = SliderTwo
         fields = ('image',
@@ -35,7 +36,7 @@ class SliderTwoModelForm(ModelForm):
 
 
 
-class ContactModelForm(ModelForm):
+class ContactModelForm(forms.ModelForm):
     class Meta:
         model = Contact
         fields = ('name',
