@@ -318,22 +318,22 @@
 
         /* section 2 */
         .section2 {
-            height: 980px;
-            width: 90%;
+            height: 860px;
+            width: 100%;
             margin-top: 80px;
         }
 
         .div1 {
             display: flex;
-            gap: 100px;
+            gap: 60px;
             margin-top: 80px;
-            margin-left: 270px;
+            margin-left: 140px;
             height: 350px;
         }
 
         .div2 {
             display: flex;
-            gap: 100px;
+            gap: 60px;
             margin-top: 80px;
             margin-left: 270px;
             height: 350px;
@@ -466,7 +466,7 @@
     <h3 style="color: #ff3d00; margin-top: 40px; margin-left: 280px;">Our Services</h3>
     <h1 style="color: #ff3d00;margin-left: 270px;padding: 8px;">Providing Competed Provational IT Service</h1>
     <section class="section2">
-        <div class="div1" style="flex-wrap:wrap;justify-content: center;align-items: center;">
+        <div class="div1" style="flex-wrap:wrap;justify-content: center;">
             {% for index in form %}
             <div style="border: 1px solid rgb(99, 98, 98); padding: 12px; border-radius: 12px;">
                 <img src=" {{ index.image.url }}"
@@ -547,7 +547,7 @@
                 <button type="submit" style="margin-top: 25px;">Read More</button>
             </div> -->
         </div>
-        <br>
+        <!-- <br> -->
     </section>
 
     <!-- section 3 -->
